@@ -15,14 +15,25 @@
         <h1>Lista de compras</h1>
     </header>
     <section id="listas" class="listas">
-        <section id="pComprar" >
+        <section id="pComprar">
             <h1>Para comprar</h1>
             <div>
                 <form action="post" id="form" class="formsPComprar">
-                    <input type="text" name="nome" id="nomeProduto"  placeholder="Digite um produto">
+                    <input type="text" name="nome" id="nomeProduto" placeholder="Digite um produto">
                     <input type="number" name="qtd" id="qtdProduto" class="qtdProduto" placeholder="Quantidade">
                     <input type="text" name="descricao" id="dscProduto" placeholder="Digite uma descrição">
-                    <button type="button" id="btnAdd" class="btnAdd">Adicionar</button>
+                    <button type="button" id="btnAdd" class="btnAdd">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </section>
+        <section id="pendente">
+            <h1>Pendente</h1>
+            <div>
+                <form action="get" id="formPendente">
+                    <ul id="listaPendente">
+
+                    </ul>
+                    <button type="button" id="btnAddFinal" class="btnAdd">Comprar</button>
                 </form>
             </div>
         </section>
