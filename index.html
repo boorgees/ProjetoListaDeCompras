@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="script/script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Lista de compras</h1>
+    </header>
+    <section id="listas" class="listas">
+        <section id="pComprar" >
+            <h1>Para comprar</h1>
+            <div>
+                <form action="post" id="form" class="formsPComprar">
+                    <input type="text" name="nome" id="nomeProduto"  placeholder="Digite um produto">
+                    <input type="number" name="qtd" id="qtdProduto" class="qtdProduto" placeholder="Quantidade">
+                    <input type="text" name="descricao" id="dscProduto" placeholder="Digite uma descrição">
+                    <button type="button" id="btnAdd" class="btnAdd">Adicionar</button>
+                </form>
+            </div>
+        </section>
+        <section id="Comprado">
+            <h1>Comprado</h1>
+            <div>
+                <form action="get" id="formComprado">
+                    <ul id="listaComprado">
+
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
