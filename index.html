@@ -28,22 +28,26 @@
         </section>
         <section id="pendente">
             <h1>Pendente</h1>
+            <span id="txtInternoPendente">Lista de produtos vazia!</span>
             <div>
                 <form action="get" id="formPendente">
                     <ul id="listaPendente">
-
                     </ul>
-                    <button type="button" id="btnAddFinal" class="btnAdd">Comprar</button>
+                    <div id="btnPendente">
+                        <button type="button" id="btnAddFinal" class="btnAdd">Comprar</button>
+                        <button type="button" id="btnAddLimparFinal" class="btnAdd">Limpar</button>
+                    </div>
+
                 </form>
             </div>
         </section>
         <section id="Comprado">
             <h1>Comprado</h1>
-            <div>
+            <div> <span id="txtInternoComprado">Adicione itens ao seu carrinho!</span>
                 <form action="get" id="formComprado">
                     <ul id="listaComprado">
-
                     </ul>
+                    <button type="button" id="btnAddLimpar" class="btnAdd">Limpar Carrinho</button>
                 </form>
             </div>
         </section>
